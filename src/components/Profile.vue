@@ -24,23 +24,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.main {
-    &__info{
-        width: 90%;
-        margin-top: 2%; 
-    }
-    &__about{
-        width: 70%;
-    }
-}
-.wall {
-    margin-top: 20px;
-
-    & input {
-        height: 40px;
-        width: 80%;
-        font-size: 1em;
-        color: lightgray;
-    }
-}
+@import '~@/assets/style/components/profile.scss';
 </style>

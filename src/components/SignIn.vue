@@ -22,26 +22,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sign_in {
-            width: 300px;
-            background-color: rgb(231, 227, 227);
-            text-align: center;
-
-            & form {
-                height: 150px;
-                align-content: space-around;
-
-                & input{
-                    height: 30px;
-                    margin: 10px 0 0 5px;
-    
-                }
-                & input[type='submit'] {
-                    background-color: darkblue;
-                    color: #fff;
-                    width: 70px;
-                    height: 30px;
-                }
-            }
-        }
+@import '~@/assets/style/components/signIn.scss';
 </style>

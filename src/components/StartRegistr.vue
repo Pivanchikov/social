@@ -52,29 +52,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .registration {
-        width: 300px;
-        background-color: rgb(231, 227, 227);
-        text-align: center;
-
-        & form {
-            align-content: space-around;
-
-            & input{
-                height: 30px;
-                margin: 10px 0 0 5px;
-            }
-
-            & input[type='radio']{
-                height: 10px;
-            }
-            
-            & input[type='button'] {
-                background-color: darkblue;
-                color: #fff;
-                width: 250px;
-                height: 30px;
-            }
-        }
-    }
+   @import '~@/assets/style/components/startRegistration.scss';
 </style>

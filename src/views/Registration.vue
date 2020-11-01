@@ -26,6 +26,11 @@ export default {
     Info,
     Sign,
     StartRegistr,
+  },
+  data() {
+    return {
+      registration: true,
+    }
   }
 }
 
@@ -34,8 +39,5 @@ export default {
 
 
 <style lang="scss">
-.aside {
-   margin-top: 1%;
-   width: 400px;
-}
+@import "@/assets/style/registration.scss"
 </style>

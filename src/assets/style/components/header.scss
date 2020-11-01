@@ -1,0 +1,26 @@
+.about {
+    height: 50px;
+    padding-top: 10px;
+    background-color: darkblue;
+    color: #fff;
+
+    &__item{
+        width: 450px;
+        
+        & input{
+            height: 15px;
+            margin: 8px 2px;
+        }
+        & input[type='button'] {
+            background-color: #fff;
+            color: darkblue;
+            width: 60px;
+            height: 20px;
+        }
+    }
+
+    & .switch{
+        padding: 10px;
+        cursor: pointer;
+    }
+}
