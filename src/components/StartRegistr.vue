@@ -19,9 +19,11 @@
             <input type="radio" id="men" value="men" v-model="picked">
             <label for="men">Мужской</label>
             <input type="radio" id="women" value="women" v-model="picked">
-            <label for="women">Женский</label>
+            <label for="women">Женский</label>      
             <br/>
-            <input type="button" value="Продолжить регистрацию">
+            <input type="text" placeholder="Введите логин" class="hidden">
+            <input type="password" placeholder="Ваведите пароль" class="hidden">
+            <input type="button" value="Продолжить регистрацию" v-on:click='open'>
         </form>
     </div>
 </template>
@@ -46,7 +48,13 @@ export default {
             2013, 2014, 2015, 2016, 2017, 2018, 2019], 
         picked: '',
         }
+    },
+    methods: {
+        open: function () {
+           document.querySelectorAll('.hidden').forEach(element => element.classList.remove('hidden'))
+        },
     }
+    
      
 }
 </script>

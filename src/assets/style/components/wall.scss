@@ -1,0 +1,16 @@
+.wall {
+    
+    & input {
+    height: 40px;
+    width: 60%;
+    font-size: 1em;
+    color: lightgray;
+    }
+
+    &  input[type='button'] {
+    background-color: darkblue;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    }
+}

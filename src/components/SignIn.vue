@@ -2,10 +2,9 @@
     <div class="div">
        <div class="sign_in">
             <form action="#" 
-            @submit="checkForm"
             method="post">
-                <input type="text" v-model="login" placeholder="Телефон или email">
-                <input type="password" v-model="password" placeholder="Пароль">
+                <input type="text" placeholder="Телефон или email">
+                <input type="password" placeholder="Пароль">
                 <br/>
                 <input type="submit" value="Войти">
             </form>

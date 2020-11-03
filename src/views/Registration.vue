@@ -1,6 +1,6 @@
 <template>
   <div class="Registration__page">
-     <Header/>
+     <Header title='true'/>
       <div class="container flex">
         <Info/>
         <div class="aside">
@@ -27,11 +27,6 @@ export default {
     Sign,
     StartRegistr,
   },
-  data() {
-    return {
-      registration: true,
-    }
-  }
 }
 
 

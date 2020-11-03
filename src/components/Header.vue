@@ -12,8 +12,11 @@
                 </form>
             </div>
 
-            <div class="switch" v-if="true">
-                <a href="#"> Switch to English </a>
+            <div class="switch" v-if='!title'>
+                <a href="#"> Друзья </a>|
+                <a href="#"> Музыка </a>|
+                <a href="#"> Видео </a>|
+                <a href="#"> Выход </a>
             </div>
         </div>
   </div>
@@ -24,6 +27,9 @@
 <script>
 export default {
   name: 'Header',
+  props: {
+      title: String,
+  },
 }
 </script>
 
