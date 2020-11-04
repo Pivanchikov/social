@@ -11,8 +11,12 @@
                     <input type="button" value="Найти">
                 </form>
             </div>
-            <div class="switch">
-                <a href="#"> Switch to English</a>
+
+            <div class="switch" v-if='!title'>
+                <a href="#"> Друзья </a>|
+                <a href="#"> Музыка </a>|
+                <a href="#"> Видео </a>|
+                <a href="#"> Выход </a>
             </div>
         </div>
   </div>
@@ -23,36 +27,13 @@
 <script>
 export default {
   name: 'Header',
-
+  props: {
+      title: String,
+  },
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
-.about {
-    height: 50px;
-    padding-top: 10px;
-    background-color: darkblue;
-    color: #fff;
-
-    &__item{
-        width: 450px;
-        
-        & input{
-            height: 15px;
-            margin: 8px 2px;
-        }
-        & input[type='button'] {
-            background-color: #fff;
-            color: darkblue;
-            width: 60px;
-            height: 20px;
-        }
-    }
-
-    & .switch{
-        padding: 10px;
-        cursor: pointer;
-    }
-}
+@import '~@/assets/style/components/header.scss';
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="Registration__page">
-     <Header/>
+     <Header title='true'/>
       <div class="container flex">
         <Info/>
         <div class="aside">
@@ -26,7 +26,7 @@ export default {
     Info,
     Sign,
     StartRegistr,
-  }
+  },
 }
 
 
@@ -34,8 +34,5 @@ export default {
 
 
 <style lang="scss">
-.aside {
-   margin-top: 1%;
-   width: 400px;
-}
+@import "@/assets/style/registration.scss"
 </style>

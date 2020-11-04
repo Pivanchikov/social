@@ -13,9 +13,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.registration__info {
-        margin-top: 2%;
-        width: 700px;
-        text-align: center;
-    }
+@import '~@/assets/style/components/registrationInfo.scss';
 </style>

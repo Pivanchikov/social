@@ -20,18 +20,5 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.main {
-
-
-    &__navigation {
-        width: 25%;
-        margin-top: 2%;
-
-        li {
-            padding-top: 10px;
-            font-size: 1em;
-            color: darkblue;
-        }
-    }
-}
+@import '~@/assets/style/components/menu.scss';
 </style>

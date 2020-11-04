@@ -9,38 +9,23 @@
                    <div class="town"><span>Город: </span>Гомель</div>
                    <div class="sp"><span>Семейное положение: </span>Не женат</div>
                     <div class="wall">
-                        <div class="div">
-                            <input type="text" name="wall" id="!" placeholder="Что у вас нового?">
-                        </div>
+                       <Wall/>
                     </div>
                </div>
            </div>
 </template>
 
 <script>
+import Wall from '@/components/wall.vue'
 export default {
     name: 'profile',
+    components: {
+        Wall,
+        }
 }
 </script>
 
 <style scoped lang="scss">
-.main {
-    &__info{
-        width: 90%;
-        margin-top: 2%; 
-    }
-    &__about{
-        width: 70%;
-    }
-}
-.wall {
-    margin-top: 20px;
-
-    & input {
-        height: 40px;
-        width: 80%;
-        font-size: 1em;
-        color: lightgray;
-    }
-}
+@import '~@/assets/style/components/profile.scss';
+@import '@/assets/style/components/wall.scss';
 </style>
